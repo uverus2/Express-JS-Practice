@@ -6,7 +6,16 @@ header
     h1 Flash Cards
 section#content
     h2= prompt
-    p
-        i Hint: #{hint}
+
+    //- ul
+    //-     each color in colors
+    //-         li= color
+
+    if hint
+        p
+            i Hint: #{hint}
+    else 
+        p (There is not hint)
+
 footer
     p App to help you studdy
