@@ -1,21 +1,14 @@
-doctype html
-head
-    title Flash Cards
-body
-header
-    h1 Flash Cards
-section#content
-    h2= prompt
+extends layout.pug
+block content
+    section#content
+        h2= prompt
 
-    //- ul
-    //-     each color in colors
-    //-         li= color
+        //- ul
+        //-     each color in colors
+        //-         li= color
 
-    if hint
-        p
-            i Hint: #{hint}
-    else 
-        p (There is not hint)
-
-footer
-    p App to help you studdy
+        if hint
+            p
+                i Hint: #{hint}
+        else 
+            p (There is not hint)
